@@ -107,7 +107,7 @@
                         <!-- Speaker 1 -->
                         <div class="seminar-card">
                             <div class="speaker-photo">
-                                <img src="images/speakers/speaker-placeholder.jpg" alt="Speaker 1">
+                                <img src="images/logo/logo.png" alt="Speaker 1">
                             </div>
                             <div class="speaker-info">
                                 <h3>Dr. [Speaker Name]</h3>
@@ -130,7 +130,7 @@
                         <!-- Speaker 2 -->
                         <div class="seminar-card">
                             <div class="speaker-photo">
-                                <img src="images/speakers/speaker-placeholder.jpg" alt="Speaker 2">
+                                <img src="images/logo/logo.png" alt="Speaker 2">
                             </div>
                             <div class="speaker-info">
                                 <h3>Dr. [Speaker Name]</h3>
@@ -153,7 +153,7 @@
                         <!-- Speaker 3 -->
                         <div class="seminar-card">
                             <div class="speaker-photo">
-                                <img src="images/speakers/speaker-placeholder.jpg" alt="Speaker 3">
+                                <img src="images/logo/logo.png" alt="Speaker 3">
                             </div>
                             <div class="speaker-info">
                                 <h3>Dr. [Speaker Name]</h3>
@@ -218,7 +218,7 @@
                         <!-- Speaker 1 -->
                         <div class="seminar-card">
                             <div class="speaker-photo">
-                                <img src="images/speakers/speaker-placeholder.jpg" alt="講演者1">
+                                <img src="images/logo/logo.png" alt="講演者1">
                             </div>
                             <div class="speaker-info">
                                 <h3>[講演者名]博士</h3>
@@ -241,7 +241,7 @@
                         <!-- Speaker 2 -->
                         <div class="seminar-card">
                             <div class="speaker-photo">
-                                <img src="images/speakers/speaker-placeholder.jpg" alt="講演者2">
+                                <img src="images/logo/logo.png" alt="講演者2">
                             </div>
                             <div class="speaker-info">
                                 <h3>[講演者名]博士</h3>
@@ -264,7 +264,7 @@
                         <!-- Speaker 3 -->
                         <div class="seminar-card">
                             <div class="speaker-photo">
-                                <img src="images/speakers/speaker-placeholder.jpg" alt="講演者3">
+                                <img src="images/logo/logo.png" alt="講演者3">
                             </div>
                             <div class="speaker-info">
                                 <h3>[講演者名]博士</h3>
@@ -391,7 +391,7 @@
                 `<a href="${seminar.youtube}" target="_blank" class="youtube-link">▶ YouTube</a>` :
                 `<span style="color: #999;">${isEn ? 'Coming soon' : '近日公開'}</span>`;
 
-            const photoSrc = seminar.speaker.photo || 'images/speakers/speaker-placeholder.jpg';
+            const photoSrc = seminar.speaker.photo || 'images/logo/logo.png';
 
             return `
                 <tr>
@@ -455,7 +455,7 @@
                 <a href="${seminar.zoom.url}" target="_blank" class="pub-link" style="background-color: #2D8CFF; color: white;">📹 ${isEn ? 'Join Zoom' : 'Zoomに参加'}</a>
             ` : '';
 
-            const photoSrc = seminar.speaker.photo || 'images/speakers/speaker-placeholder.jpg';
+            const photoSrc = seminar.speaker.photo || 'images/logo/logo.png';
 
             // Title styling - make it more prominent for meetings
             const titleStyle = seminar.type && seminar.type.includes('Meeting') ?

@@ -1,190 +1,213 @@
 # MASAIC Project Website
 
-<!-- TODO: Thay đổi mô tả dự án ở đây -->
-Website chính thức cho dự án MASAIC - Multi-Agent Systems for AI Innovation and Collaboration
+Official website for the MASAIC project: Modular Soft Adaptive Intelligent Component, part of the CROSS-X initiative.
 
-## 🚀 Giới thiệu
+## Overview
 
-Dự án MASAIC tập trung vào nghiên cứu và phát triển hệ thống robot thông minh tích hợp AI và Large Language Models (LLMs).
+MASAIC focuses on research and development of intelligent robotic systems that integrate AI, large language models, sensing, control, and adaptive modular components.
 
-## 📁 Cấu trúc Project
+The website presents the project overview, research teams, members, publications, news, seminars, collaborations, and sponsors.
 
-```
+## Project Structure
+
+```text
 MASAIC/
-├── index.html              # Trang chủ
-├── members.html            # Trang danh sách thành viên
-├── publications.html       # Trang publications
-├── news.html              # Trang tin tức
-├── schedule.html          # Trang lịch làm việc
-├── seminar.html           # Trang seminar series
-├── collaboration.html     # Trang hợp tác
-├── sponsors.html          # Trang nhà tài trợ
-├── team-robotics.html     # Trang team Robotics & Control
-├── team-ai.html           # Trang team AI & LLM Integration
-├── team-perception.html   # Trang team Perception & Sensing
-├── team-hri.html          # Trang team Human-Robot Interaction
-├── styles.css             # File CSS chính
-├── script.js              # File JavaScript chính
-├── i18n.js                # File đa ngôn ngữ (EN/JP)
-├── images/                # Thư mục chứa hình ảnh
-├── seminars/              # Thư mục quản lý seminars
-│   ├── upcoming/          # Seminars sắp diễn ra
-│   │   ├── [Speaker Name]/
-│   │   │   ├── photo.png
-│   │   │   └── talk.pdf
-│   │   └── seminars.json
-│   └── past/              # Seminars đã diễn ra
-│       ├── [Speaker Name]/
-│       │   ├── photo.png
-│       │   └── talk.pdf
-│       └── seminars.json
-└── README.md              # File này
+├── index.html              # Homepage
+├── members.html            # Project members
+├── publications.html       # Research publications
+├── news.html               # News and updates
+├── schedule.html           # Project schedule and milestones
+├── seminar.html            # Seminar series page
+├── collaboration.html      # Academic collaborators
+├── sponsors.html           # Sponsors and partners
+├── team-robotics.html      # Robotics: Design and Control/Learning team
+├── team-ai.html            # AI and LLM Integration team
+├── team-neuromorphic.html  # Neuromorphic Sensing team
+├── team-vr-ar.html         # VR/AR and Imitation Learning team
+├── styles.css              # Main stylesheet
+├── script.js               # Main JavaScript
+├── i18n.js                 # English/Japanese language switching
+├── images/                 # Image assets
+├── publication/            # Publication metadata
+├── seminars/               # Seminar data and assets
+│   ├── upcoming/           # Upcoming seminar entries
+│   └── past/               # Past seminar entries
+└── README.md               # This file
 ```
 
-## 🎨 Tùy chỉnh nội dung
+## Technology Stack
 
-### 1. Thay đổi tên đầy đủ của dự án
+- Static website using HTML, CSS, and vanilla JavaScript
+- No build process required
+- JSON-based data for seminars and publications
+- English/Japanese content switching through `i18n.js`
+- Designed for GitHub Pages deployment
 
-Tìm tất cả các comment `<!-- TODO: Thay đổi tên đầy đủ của dự án ở đây -->` trong các file HTML và cập nhật.
+## Editing Content
 
-### 2. Thay đổi màu sắc
+### Main Website Content
 
-Mở file `styles.css` và chỉnh sửa CSS Variables ở đầu file:
+Most content is edited directly in the HTML files. Look for page sections such as:
+
+- Project introduction
+- Research teams
+- Member profiles
+- Publications
+- News items
+- Contact information
+- Sponsor and collaboration sections
+
+Some older `TODO` comments may still exist in the source files and can be used as editing hints.
+
+### Styling
+
+The main style file is `styles.css`.
+
+Theme colors are defined near the top of the file:
 
 ```css
 :root {
-    --primary-color: #2563eb;      /* Màu chính */
-    --secondary-color: #1e40af;    /* Màu phụ */
-    --accent-color: #60a5fa;       /* Màu nhấn */
+    --primary-color: #6366f1;
+    --secondary-color: #8b5cf6;
+    --accent-color: #ec4899;
+    --tertiary-color: #06b6d4;
 }
 ```
 
-### 3. Thêm hình ảnh cho các team
+Update these variables to change the overall visual theme.
 
-Thêm các file hình ảnh vào thư mục `images/`:
-- `team-robotics.jpg`
-- `team-ai.jpg`
-- `team-perception.jpg`
-- `team-hri.jpg`
+### Images
 
-### 4. Cập nhật nội dung
+Images are stored under `images/`, `news/`, `collaboration/`, and `seminars/`.
 
-Tìm các comment `<!-- TODO: ... -->` trong các file HTML để biết nơi cần cập nhật:
-- Giới thiệu dự án
-- Tính năng
-- Thông tin team
-- Thông tin thành viên
-- Thông tin liên hệ
+Recommended image guidelines:
 
-## 🌐 Deploy lên GitHub Pages
+- Use JPG or PNG for browser compatibility.
+- Do not use HEIC files, because most browsers do not support them.
+- Keep image paths case-sensitive for GitHub Pages.
+- Compress large images before committing them.
 
-### Cách 1: Qua GitHub Web Interface
+## Local Development
 
-1. Push code lên GitHub repository
-2. Vào repository trên GitHub
-3. Click **Settings** → **Pages**
-4. Trong **Source**, chọn **main** branch
-5. Click **Save**
-6. Website sẽ có địa chỉ: `https://namcao258.github.io/MASAIC/`
+Because this is a static site, you can open most HTML files directly in a browser.
 
-### Cách 2: Qua Command Line (đã được cấu hình)
+However, pages that use `fetch()` to load JSON, such as `seminar.html` and `publications.html`, should be viewed through a local server:
 
 ```bash
-git add .
-git commit -m "Initial commit: MASAIC project website"
-git push origin main
-```
-
-Sau đó làm theo bước 2-6 ở Cách 1.
-
-## 🛠️ Phát triển Local
-
-Mở file `index.html` bằng trình duyệt để xem website locally.
-
-Hoặc sử dụng local server:
-
-```bash
-# Python 3
 python -m http.server 8000
-
-# Hoặc nếu có Node.js
-npx http-server
 ```
 
-Sau đó truy cập: `http://localhost:8000`
+Then open:
 
-## 🎓 Quản lý Seminar Page
+```text
+http://localhost:8000
+```
 
-### Thêm Seminar Mới
+## Seminar Management
 
-1. **Tạo thư mục cho diễn giả** trong `seminars/upcoming/` hoặc `seminars/past/`:
-   ```
-   seminars/upcoming/[Tên Diễn Giả]/
-   ├── photo.png (hoặc .jpg)
-   └── talk_info.pdf
-   ```
+Seminar data is stored in:
 
-2. **Yêu cầu tạo JSON entry**:
-   - Nói với Claude Code: "Thêm diễn giả [Tên] vào upcoming/past"
-   - Claude sẽ đọc PDF và tạo JSON entry tự động
+```text
+seminars/upcoming/seminars.json
+seminars/past/seminars.json
+```
 
-3. **Review và chỉnh sửa** `seminars.json` nếu cần
+### Adding a New Upcoming Seminar
 
-### Cấu trúc JSON Entry
+1. Create a folder under `seminars/upcoming/` for the speaker or event.
+2. Add the speaker photo and any PDF flyer if available.
+3. Add a new entry to `seminars/upcoming/seminars.json`.
+4. Confirm that `seminar.html` displays the new entry correctly through a local server.
+
+Example JSON structure:
 
 ```json
 {
-  "id": "speaker-name-2024",
+  "id": "speaker-name-2026",
   "speaker": {
     "name": "Dr. Speaker Name",
     "title": "Position",
-    "affiliation": "University/Institution",
-    "website": "https://...",
-    "photo": "seminars/upcoming/Speaker Name/photo.png",
+    "affiliation": "University or Institution",
+    "website": "https://example.com",
+    "photo": "seminars/upcoming/Speaker_Name/photo.png",
     "bio": "Speaker biography..."
   },
   "title": "Talk Title",
   "type": "Online Lecture",
-  "series": {
-    "isSeries": true,
-    "totalTalks": 3,
-    "talks": [
-      {
-        "number": 1,
-        "date": "2024-10-15",
-        "time": "9:00-10:30",
-        "status": "fixed"
-      }
-    ]
-  },
-  "zoom": {
-    "url": "https://zoom.us/...",
-    "meetingId": "123 456 7890",
-    "passcode": "password"
-  },
+  "date": "2026-03-23",
+  "time": "13:00-14:30 JST",
+  "location": "JAIST / Zoom",
   "abstract": "Talk abstract...",
-  "pdfPath": "seminars/upcoming/Speaker Name/talk.pdf"
+  "pdfPath": "seminars/upcoming/Speaker_Name/talk.pdf"
 }
 ```
 
-### Move Seminar từ Upcoming sang Past
+### Moving a Seminar from Upcoming to Past
 
-1. Di chuyển thư mục diễn giả từ `seminars/upcoming/` sang `seminars/past/`
-2. Move JSON entry từ `upcoming/seminars.json` sang `past/seminars.json`
-3. Cập nhật thông tin: thêm `youtube` URL, `date`, `time`
+1. Move the speaker folder from `seminars/upcoming/` to `seminars/past/`.
+2. Move the JSON entry from `upcoming/seminars.json` to `past/seminars.json`.
+3. Update the date, time, location, PDF path, and YouTube URL if available.
+4. Test `seminar.html` locally.
 
-## 📝 Ghi chú
+## Publication Management
 
-- Tất cả các vị trí cần thay đổi đều được đánh dấu bằng comment `<!-- TODO: ... -->`
-- Website responsive, hoạt động tốt trên mobile và desktop
-- Sử dụng vanilla HTML/CSS/JS, không cần build process
-- Hỗ trợ đa ngôn ngữ (English/Japanese)
-- Seminar page tự động load từ JSON files
+Publication metadata is stored under:
 
-## 📄 License
+```text
+publication/paper1/info.json
+publication/paper2/info.json
+```
 
-<!-- TODO: Thêm license cho dự án -->
+To add a new publication:
 
-## 👥 Contributors
+1. Create a new folder such as `publication/paper3/`.
+2. Add an `info.json` file.
+3. Update the publication folder list in `publications.html` if needed.
 
-<!-- TODO: Thêm danh sách contributors -->
+## Internationalization
+
+The website supports English and Japanese.
+
+Two approaches are used:
+
+- `data-i18n` for short navigation and common text.
+- `data-lang-content="en"` and `data-lang-content="ja"` for larger content blocks.
+
+When adding new visible content, update both language versions where appropriate.
+
+Related files:
+
+- `i18n.js`
+- `LANGUAGE_GUIDE.md`
+- `JAPANESE_CONTENT_TEMPLATE.md`
+- `QUICK_JAPANESE_SNIPPETS.md`
+
+## Deployment to GitHub Pages
+
+The project is intended to be deployed through GitHub Pages.
+
+Basic workflow:
+
+```bash
+git add .
+git commit -m "Update MASAIC website"
+git push origin main
+```
+
+Then check the GitHub Pages URL after the deployment finishes.
+
+## Notes
+
+- This is not a Node.js project and does not require `npm install`.
+- Keep all pages responsive across mobile, tablet, and desktop.
+- Use consistent navigation and footer structure across pages.
+- Keep academic and project information accurate and professional.
+- Test pages that load JSON through a local server before publishing.
+
+## License
+
+License information has not been added yet.
+
+## Contributors
+
+Contributor information has not been added yet.
