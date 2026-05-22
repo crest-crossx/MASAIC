@@ -2194,3 +2194,357 @@ body {
         grid-template-columns: 1fr;
     }
 }
+
+/* ========================================
+   Mobile polish overrides
+   ======================================== */
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+}
+
+.team-content,
+.speaker-info,
+.news-content,
+.collaborator-info {
+    min-width: 0;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .navbar .container {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 0.75rem;
+        padding: 0.65rem 16px;
+    }
+
+    .nav-brand {
+        min-width: 0;
+        gap: 0.35rem;
+    }
+
+    .brand-logo-text {
+        min-width: 0;
+        gap: 0.55rem;
+    }
+
+    .brand-logo {
+        height: 48px;
+        flex-shrink: 0;
+    }
+
+    .brand-text {
+        min-width: 0;
+    }
+
+    .cross-x,
+    .masaic-name {
+        font-size: 1.12rem;
+        line-height: 1.05;
+    }
+
+    .nav-brand .subtitle {
+        max-width: 160px;
+        font-size: 0.62rem;
+        line-height: 1.25;
+    }
+
+    .language-switcher {
+        justify-content: flex-start;
+    }
+
+    .lang-btn {
+        padding: 0.25rem 0.45rem;
+        font-size: 0.68rem;
+    }
+
+    .nav-right {
+        margin-left: auto;
+        gap: 0.5rem;
+    }
+
+    .sponsor-logos {
+        display: none;
+    }
+
+    .mobile-menu-toggle {
+        padding: 0.45rem;
+        border: 1px solid var(--border-color);
+        border-radius: 8px;
+        background-color: var(--white);
+    }
+
+    .nav-menu {
+        width: min(82vw, 320px);
+        padding-top: 76px;
+    }
+
+    .hero {
+        padding: 3rem 0;
+    }
+
+    .hero-title {
+        font-size: 2rem;
+        overflow-wrap: anywhere;
+    }
+
+    .section-title,
+    .team-header h1 {
+        font-size: 1.9rem;
+        line-height: 1.2;
+        overflow-wrap: anywhere;
+    }
+
+    .team-header {
+        padding: 2.25rem 0;
+        margin-bottom: 2rem;
+    }
+
+    .team-header p {
+        font-size: 1rem;
+        line-height: 1.55;
+    }
+
+    .team-detail,
+    .about,
+    .teams,
+    .contact {
+        padding: 3rem 0;
+    }
+
+    .features-grid,
+    .members-grid,
+    .stats-grid,
+    .milestones-grid,
+    .sponsors-grid,
+    .sponsors-grid.principal,
+    .collaboration-grid {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 1.25rem;
+    }
+
+    .teams-grid,
+    .teams-grid-three,
+    .teams-grid-single {
+        grid-template-columns: minmax(0, 1fr);
+        max-width: none;
+        gap: 1.25rem;
+    }
+
+    .feature-card,
+    .member-card,
+    .publication-item,
+    .stat-card,
+    .milestone-card,
+    .sponsor-card,
+    .collaborator-card,
+    .seminar-card,
+    .timeline-content,
+    .news-item {
+        padding: 1.25rem;
+        border-radius: 10px;
+    }
+
+    .member-card h3 {
+        white-space: normal;
+        overflow-wrap: anywhere;
+    }
+
+    .team-content [style*="display: flex"][style*="align-items: flex-start"],
+    .team-content [style*="display:flex"][style*="align-items:flex-start"] {
+        flex-direction: column !important;
+        align-items: center !important;
+        text-align: center;
+        gap: 1rem !important;
+        padding: 1.25rem !important;
+    }
+
+    .team-content [style*="width: 180px"],
+    .team-content [style*="width: 150px"],
+    .collaborator-photo img {
+        width: 128px !important;
+        height: 128px !important;
+    }
+
+    .team-content h2 {
+        font-size: 1.65rem;
+        line-height: 1.25;
+    }
+
+    .team-content p,
+    .publication-item .abstract,
+    .talk-abstract,
+    .event-description {
+        font-size: 0.98rem;
+        line-height: 1.65;
+    }
+
+    .publication-filters,
+    .view-toggle,
+    .publication-links,
+    .seminar-links,
+    .member-links,
+    .hero-buttons {
+        gap: 0.65rem;
+    }
+
+    .filter-btn,
+    .toggle-btn,
+    .pub-link,
+    .btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    .speaker-photo {
+        width: 120px;
+        height: 120px;
+    }
+
+    .talk-info {
+        padding: 1rem;
+        text-align: left;
+        width: 100%;
+    }
+
+    .schedule-timeline {
+        padding-left: 1rem;
+    }
+
+    .timeline-item {
+        padding-left: 1.25rem;
+    }
+
+    .timeline-marker {
+        left: -1.45rem;
+    }
+
+    .project-timeline-overview {
+        padding: 1rem;
+    }
+
+    .timeline-bar {
+        height: auto;
+        flex-direction: column;
+    }
+
+    .timeline-phase {
+        min-height: 44px;
+        border-right: 0;
+        border-bottom: 2px solid var(--white);
+    }
+
+    .seminar-table,
+    .seminar-table thead,
+    .seminar-table tbody,
+    .seminar-table th,
+    .seminar-table td,
+    .seminar-table tr {
+        display: block;
+        width: 100%;
+    }
+
+    .seminar-table {
+        border-radius: 0;
+        box-shadow: none;
+        background: transparent;
+    }
+
+    .seminar-table thead {
+        display: none;
+    }
+
+    .seminar-table tr {
+        background-color: var(--white);
+        border: 1px solid var(--border-color);
+        border-radius: 10px;
+        margin-bottom: 1rem;
+        overflow: hidden;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+    }
+
+    .seminar-table td {
+        border-bottom: 1px solid var(--border-color);
+        padding: 0.85rem 1rem;
+    }
+
+    .seminar-table td:last-child {
+        border-bottom: 0;
+    }
+
+    .speaker-cell,
+    .talk-cell,
+    .date-cell,
+    .youtube-cell {
+        min-width: 0;
+        white-space: normal;
+        text-align: left;
+    }
+
+    .youtube-link {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 420px) {
+    .container {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .navbar .container {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .brand-logo {
+        height: 42px;
+    }
+
+    .cross-x,
+    .masaic-name {
+        font-size: 1rem;
+    }
+
+    .nav-brand .subtitle {
+        display: none;
+    }
+
+    .lang-btn {
+        font-size: 0.64rem;
+    }
+
+    .hero-title {
+        font-size: 1.75rem;
+    }
+
+    .section-title,
+    .team-header h1 {
+        font-size: 1.65rem;
+    }
+
+    .feature-card,
+    .member-card,
+    .publication-item,
+    .stat-card,
+    .milestone-card,
+    .sponsor-card,
+    .collaborator-card,
+    .seminar-card,
+    .timeline-content,
+    .news-item {
+        padding: 1rem;
+    }
+}
