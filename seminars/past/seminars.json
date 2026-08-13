@@ -1,6 +1,6 @@
 [
   {
-    "id": "vu-nhat-minh-2024",
+    "id": "vu-nhat-minh-2025",
     "speaker": {
       "name": "Dr. Vu Nhat Minh",
       "title": "Assistant Professor",
@@ -14,12 +14,12 @@
     "abstract": "Robotics is entering a transformative era where end-to-end learning approaches are demonstrating unprecedented capability–driving major advances in autonomous driving, dexterous manipulation, and humanoid locomotion. In this talk, Dr. Vu Nhat Minh will discuss recent progress in reinforcement learning, trajectory optimization, and end-to-end frameworks for loco-manipulation–a new frontier in robotics that unifies two long-standing challenges: locomotion and manipulation.",
     "pdfPath": "seminars/past/Vu_Nhat_Minh/seminar_flier_Vu Nhat Minh.pdf",
     "youtube": "",
-    "date": "2024-12-03",
+    "date": "2025-12-03",
     "time": "15:00-16:30 JST",
     "location": "IS Collaboration Room 7"
   },
   {
-    "id": "chiara-bartolozzi-2024-talk1",
+    "id": "chiara-bartolozzi-2025-talk1",
     "speaker": {
       "name": "Dr. Chiara Bartolozzi",
       "title": "Senior Tenured Researcher",
@@ -33,11 +33,11 @@
     "abstract": "This talk explores the application of neuromorphic engineering principles to robotics through event-driven sensing and processing paradigms. Dr. Bartolozzi will discuss how neuromorphic approaches enable more efficient and bio-inspired perception systems for autonomous robots, with particular emphasis on tactile sensing and event-based vision. The presentation will cover recent advances in the NeuTouch project and demonstrate how event-driven perception can transform robotic capabilities in real-world scenarios.",
     "pdfPath": "seminars/past/Chiara Bartolozzi/Online Lecture- Dr Chiara Bartolozzi.pdf",
     "youtube": "",
-    "date": "2024-10-28",
+    "date": "2025-10-28",
     "time": "9:00-10:30 JST"
   },
   {
-    "id": "quan-luu-2024-talk1",
+    "id": "quan-luu-2025-talk1",
     "speaker": {
       "name": "Dr. Quan Luu",
       "title": "Postdoctoral Researcher",
@@ -51,7 +51,7 @@
     "abstract": "Robot learning has advanced rapidly with progress in large-scale imitation learning, reinforcement learning, and vision–language–action (VLA) models, enabling robots to perceive and act more effectively in unstructured environments. However, achieving safe and generalizable behaviors across diverse tasks and embodiments remains a major challenge. This talk will review recent trends in learning paradigms, scalable data collection, and foundation models, highlighting challenges in data diversity, embodiment transfer, safety, and robustness. I will also share an outlook on multimodal cross-embodiment learning—integrating novel robotic devices with hierarchical strategies from low-level control to high-level reasoning—as a pathway toward safe, adaptive, and generalizable robot systems.",
     "pdfPath": "seminars/past/Quan Luu/invited talk Quan Luu.pdf",
     "youtube": "https://www.youtube.com/watch?v=example",
-    "date": "2024-10-15",
+    "date": "2025-10-15",
     "time": "9:00-10:30 JST"
   }
 ]
